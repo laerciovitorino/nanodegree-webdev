@@ -1,0 +1,25 @@
+.body-custom {
+  width: 300px;
+  border: 1px solid lightgrey;
+  padding: 10px 10px;
+  box-shadow: 6px 6px 1px lightgrey;
+}
+
+.info-custom {
+  border: 1px solid lightgrey;
+  padding: 0px 10px 10px 10px;
+}
+
+p {
+  font-style: italic;
+}
+
+img {
+  width: 300px;
+  padding: 10px 0px 10px 0px;
+}
+
+ul > li > span {
+  font-weight: bold;;
+  list-style-type: none;
+}
