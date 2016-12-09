@@ -10,8 +10,12 @@
   padding: 0px 10px 10px 10px;
 }
 
-p {
+.interesting-fact {
   font-style: italic;
+}
+
+.label {
+  font-weight: bold;
 }
 
 img {
@@ -19,7 +23,6 @@ img {
   padding: 10px 0px 10px 0px;
 }
 
-ul > li > span {
-  font-weight: bold;;
+ul {
   list-style-type: none;
 }
