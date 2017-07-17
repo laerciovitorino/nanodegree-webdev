@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/** {
+  border: 1px solid red;
+}*/
+
+.header-infos {
+  float: right;
+}
+
+.portfolio-logo {
+  padding-top: 30px;
+  margin: 0;
+}
+
+.portfolio-author {
+  float: right;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.author-role {
+  float: right;
+}
+
+hr {
+  border: none;
+  height: 4px;
+  color: #7d97ad;
+  background-color: #7d97ad;
+}
+
+.my-personal-photo {
+  border-radius: 50%;
+}
+
+.featured-work-title {
+  margin-top: 20px;
+}
+
+.featured-work-title h2 {
+  color: #7d97ad;
+}
+
+.featured-work h3 {
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+}
