@@ -6,6 +6,10 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  font-family: 'Roboto Slab', serif;
+}
+
 /** {
   border: 1px solid red;
 }*/
@@ -50,22 +54,27 @@ hr {
   width: 250px;
 }
 
+section {
+  margin-bottom: 40px;
+}
+
 .featured-work-title {
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
 
 .featured-work-title h2 {
   color: #7d97ad;
 }
 
+.featured-work {
+  text-align: center;
+}
+
+article img {
+  cursor: pointer;
+}
+
 .featured-work h3 {
-  text-align: center;
-}
-
-.featured-work a {
-  margin: 0 auto;
-}
-
-.link {
-  text-align: center;
+  font-size: 22px;
 }
