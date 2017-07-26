@@ -10,12 +10,21 @@ html {
   border: 1px solid red;
 }*/
 
-.header-infos {
+.header-info {
   float: right;
+  flex-wrap: wrap;
+}
+
+.header-info h1 {
+  margin-top: 40px;
+}
+
+.header-info h4 {
+  margin-top: 5px;
 }
 
 .portfolio-logo {
-  padding-top: 30px;
+  padding-top: 25px;
   margin: 0;
 }
 
@@ -36,12 +45,13 @@ hr {
   background-color: #7d97ad;
 }
 
-.my-personal-photo {
+.personal-photo {
   border-radius: 50%;
+  width: 250px;
 }
 
 .featured-work-title {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .featured-work-title h2 {
@@ -50,6 +60,10 @@ hr {
 
 .featured-work h3 {
   text-align: center;
+}
+
+.featured-work a {
+  margin: 0 auto;
 }
 
 .link {
