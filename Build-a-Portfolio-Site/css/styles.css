@@ -10,10 +10,6 @@ html {
   font-family: 'Roboto Slab', serif;
 }
 
-/** {
-  border: 1px solid red;
-}*/
-
 .header-info {
   float: right;
   flex-wrap: wrap;
@@ -30,6 +26,7 @@ html {
 .portfolio-logo {
   padding-top: 25px;
   margin: 0;
+  width: 12%;
 }
 
 .portfolio-author {
@@ -45,13 +42,19 @@ html {
 hr {
   border: none;
   height: 4px;
-  color: #7d97ad;
   background-color: #7d97ad;
 }
 
 .personal-photo {
   border-radius: 50%;
-  width: 250px;
+  width: 100%;
+  max-width: 100%;
+  padding: 1.5em;
+}
+
+.bio-description {
+  padding: 1.5em;
+  font-size: 16px;
 }
 
 section {
@@ -60,7 +63,6 @@ section {
 
 .featured-work-title {
   margin-top: 40px;
-  margin-bottom: 15px;
 }
 
 .featured-work-title h2 {
@@ -71,10 +73,144 @@ section {
   text-align: center;
 }
 
+article {
+  padding: 1.5em;
+}
+
 article img {
   cursor: pointer;
+  max-width: 100%;
+}
+
+article a {
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .featured-work h3 {
   font-size: 22px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 442px) {
+  .header-info {
+    position: relative;
+  }
+
+  .header-info h1 {
+    text-align: center;
+  }
+
+  .header-info h4 {
+    text-align: center;
+    font-size: 20px;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  .portfolio-logo {
+    width: 50%;
+    text-align: center;
+    margin: auto auto -10px auto;
+  }
+
+  .personal-photo {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #bio-photo-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 443px) {
+  .header-info {
+    padding: 0;
+  }
+
+  .header-info h1 {
+    font-size: 30px;
+  }
+
+  .header-info h4 {
+    font-size: 18px;
+  }
+
+  .portfolio-logo {
+    width: 23%;
+    float: left;
+  }
+
+  .personal-photo {
+    width: 40%;
+    float: left;
+  }
+
+  #bio-photo-desktop {
+    display: none;
+  }
+
+  article img {
+    margin: 0 auto;
+  }
+
+  .featured-work-title {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 530px) {
+  .header-info h1 {
+    font-size: 35px;
+  }
+
+  .header-info h4 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .portfolio-logo {
+    width: 18%;
+  }
+
+  .personal-photo {
+    width: 100%;
+    border-radius: 10%;
+    height: 25em;
+    padding: 1.5em 0;
+  }
+
+  #bio-photo-mobile {
+    display: none;
+  }
+
+  #bio-photo-desktop {
+    display: block;
+  }
+
+  .featured-work-title {
+    text-align: inherit;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .portfolio-logo {
+    width: 15%;
+  }
+
+  .bio {
+    margin-left: -2.5em;
+  }
+
+  .personal-photo {
+    width: 100%;
+    transform: scale(0.82, 1);
+    border-radius: 10%;
+    height: 25em;
+  }
+
+  .bio-description {
+    padding: 1.5em 0;
+  }
 }
