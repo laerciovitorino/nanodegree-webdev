@@ -7,49 +7,62 @@
     <meta charset="utf-8">
     <title>Laércio Vitorino</title>
 
-    <link rel="stylesheet" href="./resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./resources/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/libs/font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="header-container">
         <div class="row">
           <div class="col-md-6 col-sm-4 portfolio-logo">
-            <img src="./resources/images/logo.png" alt="Portfolio Logo" class="img-responsive">
+            <picture>
+              <source media="(min-width: 992px)" srcset="./resources/images/logo-large.png" alt="Portfolio Logo" class="img-responsive">
+              <source media="(min-width: 300px)" srcset="./resources/images/logo-small.png" alt="Portfolio Logo" class="img-responsive">
+              <img src="./resources/images/logo.png" alt="Portfolio Logo" class="img-responsive">
+            </picture>
           </div>
           <div class="col-md-6 col-sm-8 header-info text-uppercase">
-            <div class="col-md-12 col-sm-12">
-              <h1 class="portfolio-author">Laércio Vitorino</h1>
-            </div>
-            <div class="col-md-12 col-sm-12">
-              <h4 class="author-role">Front-end Developer</h4>
-            </div>
+            <h1 class="portfolio-author">Laércio Vitorino</h1>
+            <h4 class="author-role">Front-end Developer</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
           </div>
         </div>
       </header>
-      <div class="row">
-        <div class="col-md-12">
-          <hr>
-        </div>
-      </div>
       <main>
         <div class="row bio">
           <div class="col-md-3">
-            <img src="./resources/images/personal-photo-mobile.jpg" id="bio-photo-mobile"  alt="Main image" class="img-responsive personal-photo">
-            <img src="./resources/images/personal-photo-desktop.jpg" id="bio-photo-desktop" alt="Main image" class="img-responsive personal-photo">
+            <picture>
+              <source media="(min-width: 992px)" srcset="./resources/images/personal-photo-desktop-large.jpg" alt="Main image" class="img-responsive personal-photo">
+              <source media="(min-width: 300px)" srcset="./resources/images/personal-photo-mobile-large.jpg" alt="Main image" class="img-responsive personal-photo">
+              <img src="./resources/images/personal-photo-mobile.jpg" alt="Main image" class="img-responsive personal-photo">
+            </picture>
           </div>
           <div class="col-md-9 bio-description">
-            <p>I am a Junior System Analyst at Software Practices Laboratory - SPLab. I work in the Term Monitor project, a partnership between the SPLab and the Ingenico Group. My role in that project is to manage, with another work partner, a small, but very efficient and competent team, leading this group to develop and improve applications for payment solutions.
+            <p class="photo-reference">
+              <span>
+                Hi! I'm Laércio (the smiley guy in the photo above). I am a Front-End Web developer. I've started to play around and
+                work with web development about 2+ years ago. Since then I've get involved in a bunch of projects working on
+                development of web components and web aplications as a whole, and sometimes doing some testing as well. During all this
+                time I've used some tools and technologies that helped me to achieve the desired results in a more feasible way. Some
+                of those tools were: the Angular framework, versions 1.x and 4, languages and technologies such as HTML5, CSS3,
+                JavaScript, the Twitter Bootstrap framework, and some other tools.
+              </span>
+            </p>
 
-              Formerly I've worked for two years mainly with Android application testing and web application development across a couple of teams(e.g. Sony, Asus and Compal teams) at Embedded Laboratory. On those projects I had the opportunity to experiment and use tools such as Google Espresso for automated tests and TestLink for reporting of test cases, test suites, execution of test scenarios and such. Also I used to work with AnguarJS framework along with HTML5, CSS3, JQuery and Twitter Bootstrap to build a web application service to managing marketing campaigns for the Android platform.
-              Most recently I started to play around with ReactJS, and currently I am enrolled in a Nanodegree in web front-end development at Udacity website to improve my front-end development skills. That Nanodegree is a partnership among Udacity, AT&T, Google, Github and Hack Reactor.
+              <p>I'm passionate about learning. I study every single day and I strive everyday to become a better programmer/software
+              engineer. I study things from machine learning to web development, from CSS to MongoDB, from how to repair a pair of
+              shoes to how to invest money in an effective and profitable way. So I'm really open to any kind of knowledge and I always
+              try to keep my mind open to new opportunities.</p>
 
-              During my undergraduate I had one of the greatest opportunity of my life. I went to the USA and took Computer Science classes as part of my undergraduate studies.
-
-              Feel free to contact me at: laerciovitorino at gmail dot com
-              See my Github profile at: github.com/laerciovitorino</p>
+              <p>If you want to know more about me, in the bottom of this page you can access my profiles on social medias. Feel free
+                 to contact me at: laerciovitorino at gmail dot com</p>
           </div>
         </div>
         <div class="row featured-work-title">
@@ -59,7 +72,10 @@
         </div>
         <section class="row">
           <article class="col-md-4 featured-work">
-            <img src="./resources/images/embedded-lab.png" alt="Feature Work 1" class="img-responsive" data-toggle="modal" data-target="#modal-work-1">
+            <picture>
+              <source media="(min-width: 300px)" srcset="./resources/images/embedded-lab.png" alt="Feature Work 1" class="img-responsive" data-toggle="modal" data-target="#modal-work-1">
+              <img src="./resources/images/embedded-lab.png" alt="Feature Work 1" class="img-responsive" data-toggle="modal" data-target="#modal-work-1">
+            </picture>
             <h3>WEB DEVELOPER - EMBEDDED LAB(ASUS TEAM)</h3>
             <a href="http://www.embeddedlab.org/">Embedded Lab</a>
           </article>
@@ -70,7 +86,14 @@
                   <h4 class="modal-title" id="featured-work-1">Web Developer - Asus Team</h4>
                 </div>
                 <div class="modal-body">
-                  <p>I worked as a Junior Android Application Tester as well as a Web Application Developer at Embedded Laboratory. I was responsible to create and execute test plans on Android applications and Android games, using Espresso testing framework to automate UI tests in order to assure that the behavior of the apps was in accordance with what it was specified and required by the client. I was also responsible to perform automated tests in web applications using the Protractor framework. In addition, I got involved in the development of a web system using AngularJS framework for UI development and to manage all the front-end logic, and the Django framework to deal with the development of the back-end part. That web system was aimed for managing Android commercial campaigns.</p>
+                  <p>I've worked as a Junior Android Application Tester as well as a Web Application Developer at Embedded Laboratory.
+                    I was responsible to create and execute test plans on Android applications and Android games, using the Espresso
+                    testing framework to automate UI tests in order to assure that the behavior of the apps was in accordance with
+                    what was specified and required by the client. I was also responsible to perform automated tests on web
+                    applications using the Protractor framework. In addition, I got involved in the development of a web application
+                    using AngularJS(1.x) framework for UI development and to manage all the front-end logic; and the Django framework
+                    to deal with the development of the back-end part. That web application was aimed for managing Android commercial
+                    campaigns by the Asus stakeholders.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
@@ -79,7 +102,10 @@
             </div>
           </div>
           <article class="col-md-4 featured-work">
-            <img src="./resources/images/embedded-lab.png" alt="Feature Work 2" class="img-responsive" data-toggle="modal" data-target="#modal-work-2">
+            <picture>
+              <source media="(min-width: 300px)" srcset="./resources/images/embedded-lab.png" alt="Feature Work 2" class="img-responsive" data-toggle="modal" data-target="#modal-work-2">
+              <img src="./resources/images/embedded-lab.png" alt="Feature Work 2" class="img-responsive" data-toggle="modal" data-target="#modal-work-2">
+            </picture>
             <h3>WEB DEVELOPER - EMBEDDED LAB(COMPAL TEAM)</h3>
             <a href="http://www.embeddedlab.org/">Embedded Lab</a>
           </article>
@@ -90,7 +116,10 @@
                   <h4 class="modal-title" id="featured-work-2">Web Developer - Compal Team</h4>
                 </div>
                 <div class="modal-body">
-                  <p>I worked as a Junior Web Application Tester and Web Application Developer at Embedded Laboratory, inside the Compal Team. I was responsible in planning test cases and test suites for both parts of the web application system: the front-end part and the back-end as well; and write unit tests for the back-end part of the application system using the JUnit framework. I was also in charge to execute manual tests, and then use TestLink web tool to report tests results. In addition I performed automated tests for the front-end part of the system using the Protractor test framework.</p>
+                  <p>I've worked as a Junior Web Application Tester and Web Application Developer at Embedded Laboratory. I was
+                    responsible for planning test cases and test suites for the back-end as well as the front-end of a web application.
+                    For the back-end I've written and performed unit tests using the JUnit framework, whereas for the front-end I've
+                    performed the same tasks using the Protractor testing framework.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
@@ -99,7 +128,10 @@
             </div>
           </div>
           <article class="col-md-4 featured-work">
-            <img src="./resources/images/splab.png" alt="Feature Work 3" class="img-responsive" data-toggle="modal" data-target="#modal-work-3">
+            <picture>
+              <source media="(min-width: 300px)" srcset="./resources/images/splab.png" alt="Feature Work 3" class="img-responsive" data-toggle="modal" data-target="#modal-work-3">
+              <img src="./resources/images/splab.png" alt="Feature Work 3" class="img-responsive" data-toggle="modal" data-target="#modal-work-3">
+            </picture>
             <h3>WEB DEVELOPER - SPLAB(INGENICO TEAM)</h3>
             <a href="http://splab.computacao.ufcg.edu.br/">SPLab</a>
           </article>
@@ -110,7 +142,12 @@
                   <h4 class="modal-title" id="featured-work-3">Web Developer - Ingenico Team</h4>
                 </div>
                 <div class="modal-body">
-                  <p>I am a Junior System Analyst at Software Practices Laboratory - SPLab. I work in the Term Monitor project, a partnership between the SPLab and the Ingenico Group. My role in that project is to manage, with another work partner, a small, but very efficient and competent team, leading this group to develop and improve applications for payment solutions, as well as develop web applications to help clients to get a better control and management of their products. Those web applications are developed using AngularJS framework along with HTML, CSS3, JavaScript, JQuery, Bootstrap and some other libraries.</p>
+                  <p>I've worked at the SPLab as a Junior Web Developer in a project called Term Monitor, a partnership between the
+                    SPLab and the Ingenico Group. My role in that project was to manage, with another work partner, a small, but very
+                    efficient and competent team, leading this group to develop and improve applications for payment solutions, as
+                    well as develop web applications to help clients to get a better control and management of their products. Those
+                    web applications were developed using AngularJS framework along with HTML, CSS3, JavaScript, JQuery, Bootstrap
+                    and some other libraries.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
@@ -120,8 +157,29 @@
           </div>
         </section>
       </main>
+      <footer>
+        <div class="row social-medias">
+          <div class="col-md-1">
+            <a target="_blank" href="https://github.com/laerciovitorino"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="col-md-1">
+            <a target="_blank" href="https://twitter.com/laerciovitorino"><i class="fa fa-twitter-square"></i></a>
+          </div>
+          <div class="col-md-1">
+            <a target="_blank" href="https://www.linkedin.com/in/laerciovitorino/"><i class="fa fa-linkedin-square"></i></a>
+          </div>
+          <div class="col-md-1">
+            <a target="_blank" href="https://www.facebook.com/laercio.vitorino.1"><i class="fa fa-facebook-square"></i></a>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-md-12">
+            <p>Laércio Vitorino 2017 <i class="fa fa-copyright"></i></p>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="./resources/jquery/jquery-3.2.1.min.js"></script>
-    <script src="./resources/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./resources/libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./resources/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
