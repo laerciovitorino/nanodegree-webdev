@@ -7,7 +7,7 @@ html {
 }
 
 * {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .header-info {
@@ -32,7 +32,7 @@ html {
 .portfolio-author {
   float: right;
   margin-top: 35px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .author-role {
@@ -40,9 +40,7 @@ html {
 }
 
 hr {
-  border: none;
-  height: 4px;
-  background-color: #7d97ad;
+  border-bottom: 4px solid #7d97ad;
 }
 
 .personal-photo {
@@ -120,7 +118,7 @@ article a {
 }
 
 .copyright {
-  padding: 0.5em 0;;
+  padding: 0.5em 0;
   font-size: 1.3em;
   text-align: center;
   margin: 0 auto;
